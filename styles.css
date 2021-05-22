@@ -1,0 +1,30 @@
+/*Basic universal design elements*/
+body {
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Header design elements*/
+header {
+    background-color: peru;
+    position: sticky;
+    max-width: 100%;
+}
+/* Navlist Flex elements */
+.navList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 70px;
+}
+/*Footer background*/
+footer {
+    background-color: darkcyan;
+    height: 200px;
+    bottom: 0px;
+    max-width: 100%;
+}
+/*Home image auto scale*/
+#homeImage {
+    max-width: 100%;
+    height: auto;
+}
