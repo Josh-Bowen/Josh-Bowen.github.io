@@ -16,15 +16,15 @@ header {
     padding-top: 2%;
     margin-left: 5%;
 }
-
+/*little round header image*/
 header img {
     border: solid 1px white;
     border-radius: 50%;
     max-height: 150px;
     margin: 40px 30px;
 }
-
-header div span{
+/*Nav-bar position and styling*/
+nav span{
     float: right;
     display:inline-block;
     border-right: 1px solid black;
@@ -34,27 +34,60 @@ header div span{
     position: absolute;
     right: 0px;
     margin: 40px 40px;
-    
-
+}
+a {
+    color: rgb(252, 105, 52);
 }
 
 /* styling for below the header*/
 
-#body-image {
-    display: block;
-    width: 50%;
-    max-width: auto;
+
+/*Home page button stylings*/
+.middle {
+    margin: auto;
+    position: relative;
+}
+
+div img {
+    display: flex;
+    max-width: 1000px;
+    width: 75%;
+    max-height: 700px;
     margin-left: auto;
     margin-right: auto;
+ 
 }
-/*Home page button stylings*/
 .button {
-    font-size: 24px;
-    display: inline-block;
-    margin: auto;
-    align-items: space-between;
+    display: flex;
+    flex-direction: row;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    font-size: 24px;
 }
+#buttonA {
+    background-color: coral;
+    border: 2px solid rgb(252, 105, 52);
+    padding: 15px;
+    margin: 0px 20px;
+    transition-duration: 0.2s;
+}
+#buttonB {
+    background-color: burlywood;
+    border: 2px solid rgb(252, 105, 52);
+    padding: 15px;
+    margin: 0px 20px;
+    transition-duration: 0.2s;
+}
+#buttonC {
+    background-color: rgb(0, 89, 255);
+    border: 2px solid rgb(252, 105, 52);
+    padding: 15px;
+    margin: 0px 20px;
+    transition-duration: 0.2s;
+}
+
 #buttonA:hover {
     background-color: whitesmoke;
     color: coral;
@@ -67,21 +100,48 @@ header div span{
     background-color: whitesmoke;
     color: rgb(0, 89, 255);
 }
-#buttonA {
-    background-color: coral;
-    border: 2px solid rgb(252, 105, 52);
-    padding: 15px;
-    transition-duration: 0.2s;
+
+@media only screen and (max-width: 600px) {
+    header {
+        margin: auto;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+ #header-navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        float: right;
+        width: 75%;
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+    }
+    header img { 
+        max-height: 150px;
+        max-width: 150px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .button {
+        flex-direction: column;
+        position: absolute;
+        top: 35px;
+    }
+    #buttonA {
+        margin-top: 20px;
+    }
+    #buttonB {
+        margin-top: 20px;
+    }
+    #buttonC {
+        margin-top: 20px;
+    }
+    div img {
+        width: 100%;
+    }
 }
-#buttonB {
-    background-color: burlywood;
-    border: 2px solid rgb(252, 105, 52);
-    padding: 15px;
-    transition-duration: 0.2s;
-}
-#buttonC {
-    background-color: rgb(0, 89, 255);
-    border: 2px solid rgb(252, 105, 52);
-    padding: 15px;
-    transition-duration: 0.2s;
-}
+@media only screen and (max-width: 375px) {
+    .button {
+        top: 10px;
+    }
