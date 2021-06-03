@@ -29,6 +29,9 @@ nav span{
     border-right: 1px solid black;
     padding: 5px 10px;
 }
+span:first-child{
+    border-right: 0;
+}
 #header-navbar {
     position: absolute;
     right: 0px;
@@ -64,6 +67,7 @@ div img {
     left: 50%;
     transform: translate(-50%, -10%);
     font-size: 24px;
+
 }
 #buttonA {
     background-color: coral;
@@ -71,6 +75,7 @@ div img {
     padding: 15px;
     margin: 0px 20px;
     transition-duration: 0.2s;
+    border-radius: 10%;
 }
 #buttonB {
     background-color: burlywood;
@@ -164,4 +169,7 @@ div img {
 @media only screen and (max-width: 375px) {
     .button {
         top: 10px;
+    }
+    p {
+        font-size: 18px;
     }
