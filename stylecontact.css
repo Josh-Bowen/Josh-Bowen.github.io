@@ -28,6 +28,7 @@ nav span{
     display:inline-block;
     border-right: 1px solid black;
     padding: 5px 10px;
+
 }
 span:first-child{
     border-right: 0;
@@ -36,10 +37,9 @@ span:first-child{
     position: absolute;
     right: 0px;
     margin: 40px 40px;
+    color: black;
 }
-header a {
-    color: rgb(252, 105, 52);
-}
+
 
 /* styling for below the header*/
 

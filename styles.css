@@ -1,109 +1,150 @@
 /*Basic universal design elements*/
 body {
-    background-color: cadetblue;
+    background-color: rgba(149, 200, 202, 0.384);
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /*Header design elements Photo by Fahmi Fakhrudin*/
 header {
+    background-color: white;
     display: flex;
-    margin: 30px 30px;
+    padding: 0px;
+    padding-left: 10%;
+    border-bottom: 2px solid gray;
 }
 #header-text {
     position: relative;
     flex-direction: column;
-    padding-top: 2%;
-
+    padding-top: 1%;
 }
 /*little round header image*/
 header img {
-    border: solid 1px white;
     border-radius: 50%;
     max-height: 150px;
-    margin: 40px 30px;
+    margin: 10px;
+    padding: 0px 10px;
 }
-/*Nav-bar position and styling*/
+        /*Nav-bar position and styling*/
+/*styles navbar*/
+#header-navbar {
+    position: absolute;
+    right: 0px;
+    margin: 2% 2%;
+    color: black;
+}
+/*styles nav buttons*/
 nav span{
     float: right;
     display:inline-block;
     border-right: 1px solid black;
-    padding: 5px 10px;
+    padding: 6px;
 }
+/* removes border*/
 span:first-child{
     border-right: 0;
 }
-#header-navbar {
-    position: absolute;
-    right: 0px;
-    margin: 40px 40px;
-}
-header a {
-    color: rgb(252, 105, 52);
-}
 
-/* styling for below the header*/
+        /* styling for below the header*/
 
+    /*Home page button stylings*/
 
-/*Home page button stylings*/
+/*styling for whole middle*/
 .middle {
+    display: flex;
     margin: auto;
-    position: relative;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/media/V60-sean-benesh.jpg");
+    height: 640px;
+    width: auto;
+    max-width: 90%;
+    background-position: center;
+    background-size: cover;
 }
 
-div img {
-    display: flex;
-    max-width: 1000px;
-    width: 75%;
-    max-height: 700px;
-    margin-left: auto;
-    margin-right: auto;
- 
-}
+/* position of buttons*/
 .button {
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    font-size: 24px;
-
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
+/*button to about page*/
 #buttonA {
-    background-color: coral;
-    border: 2px solid rgb(252, 105, 52);
     padding: 15px;
     margin: 0px 20px;
     transition-duration: 0.2s;
-    border-radius: 10%;
+    border-radius: 5%;
+    font-size: 24px;
+    width: 120px;
 }
-#buttonB {
-    background-color: burlywood;
-    border: 2px solid rgb(252, 105, 52);
-    padding: 15px;
-    margin: 0px 20px;
-    transition-duration: 0.2s;
-}
-#buttonC {
-    background-color: rgb(0, 89, 255);
-    border: 2px solid rgb(252, 105, 52);
-    padding: 15px;
-    margin: 0px 20px;
-    transition-duration: 0.2s;
-}
-
 #buttonA:hover {
-    background-color: whitesmoke;
-    color: coral;
+    background-color: black;
+    color: white;
+}
+/*button to blog page*/
+#buttonB {
+    padding: 15px;
+    margin: 0px 20px;
+    transition-duration: 0.2s;
+    border-radius: 5%;
+    font-size: 24px;
+    width: 120px;
 }
 #buttonB:hover {
-    background-color: whitesmoke;
-    color: rgb(252, 105, 52);
+    background-color: black;
+    color: white;
+}
+/*button to contact page*/
+#buttonC {
+    padding: 15px;
+    margin: 0px 20px;
+    transition-duration: 0.2s;
+    border-radius: 5%;
+    font-size: 24px;
+    width: 120px;
 }
 #buttonC:hover {
-    background-color: whitesmoke;
-    color: rgb(0, 89, 255);
+    background-color: black;
+    color: white;
 }
+
+/*Footer stylings*/
+footer {
+    background-color: white;
+    border-top: 2px solid gray;
+    display: flex;
+    bottom: 0%;
+    height: 100px;
+    min-height: 30px;
+    margin-top: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    padding: 20px;
+}
+
+#footelements {
+    display: flex;
+    padding: 0px;
+}
+
+#footicons {
+    font-size: 40px;
+
+}
+#catfriend {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/*Media breakpoints*/
 @media only screen and (max-width: 1100px){
     #header-navbar {
         display: flex;
@@ -132,11 +173,7 @@ div img {
         display: flex;
         flex-direction: row-reverse;
         position: relative;
-        float: right;
-        width: 75%;
-        padding: 0;
-        margin: 0;
-        margin-left: 20px;
+        margin: auto;
     }
     nav span {
         border-right: 1px black solid;
@@ -148,9 +185,10 @@ div img {
         margin: auto;
         margin-bottom: 10px;
     }
+
     .button {
         flex-direction: column;
-        position: absolute;
+        position: relative;
         top: 35px;
     }
     #buttonA {
