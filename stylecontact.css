@@ -1,48 +1,85 @@
 /*Basic universal design elements*/
 body {
-    background-color: cadetblue;
+    background-color: rgba(149, 200, 202, 0.384);
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /*Header design elements Photo by Fahmi Fakhrudin*/
 header {
+    background-color: white;
     display: flex;
-    margin: 30px 30px;
+    padding: 0px;
+    padding-left: 10%;
+    border-bottom: 2px solid gray;
 }
 #header-text {
     position: relative;
     flex-direction: column;
-    padding-top: 2%;
-
+    padding-top: 1%;
 }
 /*little round header image*/
 header img {
-    border: solid 1px white;
     border-radius: 50%;
     max-height: 150px;
-    margin: 40px 30px;
+    margin: 10px;
+    padding: 0px 10px;
 }
-/*Nav-bar position and styling*/
+        /*Nav-bar position and styling*/
+/*styles navbar*/
+#header-navbar {
+    position: absolute;
+    right: 0px;
+    margin: 2% 2%;
+    color: black;
+}
+/*styles nav buttons*/
 nav span{
     float: right;
     display:inline-block;
     border-right: 1px solid black;
-    padding: 5px 10px;
-
+    padding: 6px;
 }
+/* removes border*/
 span:first-child{
     border-right: 0;
 }
-#header-navbar {
-    position: absolute;
-    right: 0px;
-    margin: 40px 40px;
-    color: black;
-}
-
 
 /* styling for below the header*/
 
+
+/*Footer stylings*/
+footer {
+    background-color: white;
+    border-top: 2px solid gray;
+    display: flex;
+    bottom: 0%;
+    height: 100px;
+    min-height: 30px;
+    margin-top: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    padding: 20px;
+}
+
+#footelements {
+    display: flex;
+    padding: 0px;
+}
+
+#footicons {
+    font-size: 40px;
+
+}
+#catfriend {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
 /*media breakpoints for header anmd navbar*/
 @media only screen and (max-width: 1100px){
     #header-navbar {

@@ -48,8 +48,6 @@ span:first-child{
 
         /* styling for below the header*/
 
-    /*Home page button stylings*/
-
 /*styling for whole middle*/
 .middle {
     display: flex;
@@ -60,11 +58,12 @@ span:first-child{
     background-image: url("/media/V60-sean-benesh.jpg");
     height: 640px;
     width: auto;
+    max-width: 960px;
     max-width: 90%;
     background-position: center;
     background-size: cover;
 }
-
+    /*Home page button stylings*/
 /* position of buttons*/
 .button {
     display: flex;
