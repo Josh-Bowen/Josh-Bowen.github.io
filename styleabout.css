@@ -1,126 +1,50 @@
-/*Basic universal design elements*/
-body {
-    background-color: rgba(149, 200, 202, 0.384);
-    font-family: Arial, Helvetica, sans-serif;
+section{
+    display: flex;
+    margin: 1px;
+    padding: 1% 1%;
+    padding-left: 40px;
+    margin-left: 2% 5%;
+    padding: 40px;
+    margin: 2% 5%;
+}
+
+.headingclass {
+    text-indent: 30px;
+    font-size: 28px;
+    border-bottom: solid 2px gray;
+}
+
+.infoclass {
+    flex-direction: column;
     padding: 0;
+}
+
+.biotext {
+    text-align: left;
+    text-indent: 30px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    background-color: white;
+    padding: 15px;
+    border: 1px gray solid;
+}
+#resume {
+    padding-left: 5%;
     margin: 0;
 }
-
-/*Header design elements Photo by Fahmi Fakhrudin*/
-header {
-    background-color: white;
-    display: flex;
-    padding: 0px;
-    padding-left: 10%;
-    border-bottom: 2px solid gray;
-}
-#header-text {
-    position: relative;
-    flex-direction: column;
-    padding-top: 1%;
-}
-/*little round header image*/
-header img {
-    border-radius: 50%;
-    max-height: 150px;
-    margin: 10px;
-    padding: 0px 10px;
-}
-        /*Nav-bar position and styling*/
-/*styles navbar*/
-#header-navbar {
-    position: absolute;
-    right: 0px;
-    margin: 2% 2%;
-    color: black;
-}
-/*styles nav buttons*/
-nav span{
-    float: right;
-    display:inline-block;
-    border-right: 1px solid black;
-    padding: 6px;
-}
-/* removes border*/
-span:first-child{
-    border-right: 0;
-}
-/*middle elements*/
-/*Footer stylings*/
-footer {
-    background-color: white;
-    border-top: 2px solid gray;
-    display: flex;
-    bottom: 0%;
-    height: 100px;
-    min-height: 30px;
-    margin-top: 10%;
-    justify-content: space-around;
-    align-items: center;
-}
-footer a {
-    padding: 20px;
-}
-
-#footelements {
-    display: flex;
-    padding: 0px;
-}
-
-#footicons {
-    font-size: 40px;
-
-}
-#catfriend {
-    position: relative;
-    max-width: 100%;
-    height: auto;
+.clickable {
     margin: auto;
 }
-
-/*media breakpoints for header anmd navbar*/
-@media only screen and (max-width: 1100px){
-    #header-navbar {
-        display: flex;
-        flex-direction: column-reverse;
-        position: relative;
-        float: right;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 60px;
-    }
-    nav span {
-        border-right: 0;
-        border-bottom: 1px black solid;
-    }
+.clickable i {
+    font-size: 50px;
+    padding: 10px 20px;
+}
+#exlinks {
+    padding: 0;
+    flex-direction: column;
 }
 
-@media only screen and (max-width: 600px) {
-    header {
-        margin: auto;
-        flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 15px;
-    }
- #header-navbar {
-        display: flex;
-        flex-direction: row-reverse;
-        position: relative;
-        float: right;
-        width: 75%;
-        padding: 0;
-        margin: 0;
-        margin-left: 20px;
-    }
-    nav span {
-        border-right: 1px black solid;
-        border-bottom: 0;
-    }
-    header img { 
-        max-height: 150px;
-        max-width: 150px;
-        margin: auto;
-        margin-bottom: 10px;
-    }
+ul li {
+    align-items: center;
+    display: inline-block;
 }

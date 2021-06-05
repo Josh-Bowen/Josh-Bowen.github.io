@@ -3,60 +3,59 @@
     <!-- This contains the HTML for Home page-->
     <head>
         <title>About Josh B</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <link rel="Theme Stylesheet" href="themestyle.css"/>
         <link rel="stylesheet aboutme" href="styleabout.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
         <script src="https://kit.fontawesome.com/fa8763d7a3.js" crossorigin="anonymous"></script>
     </head>
     <!-- The content -->
     <body>
-    <header>
-        <div id="header-text">
-            <h1>About Me!</h1>
-            <p>I'm Josh! My pronouns are he/they.<br> Former barista, current barista trainer, future coder.</p>
-        </div>
-            <img id="header-image" src="/media/latte-art-square.jpg" alt="mmmcoffee"/>
-        <nav id="header-navbar">
+        <header>
+            <div id="header-text">
+                <h1>About Me!</h1>
+                <p>I'm Josh! My pronouns are he/they.<br> Former barista, current barista trainer, future coder.</p>
+            </div>
+                <img id="header-image" src="/media/latte-art-square.jpg" alt="mmmcoffee"/>
+            <nav id="header-navbar">
             <span><a href=contact.html>Contact</a></span>
             <span><a href=blog.html>Blog</a></span>
             <span><a href=about.html>About</a></span>
             <span><a href=index.html>Home</a></span>
-        </nav>
-    </header>
-    <!--Main Bio Section-->
-    <section>
-        <h2>
-            Info
-        </h2>
-        <p>
-            Hi! I'm currently a student at Coder Academy, studying the CCC course - Coding, Cloud and Cybersecurity.
-        <br>
-            My background is in hospitality in which I have worked for the last 10 years.
-             I specialized specifically in the coffee and cafe side of the industry, having worked mostly as a speciality coffee barista. 
-             I have spent the later years of my coffee career as a barista 
-             trainer, which I am internationally recognized to teach courses developed by the Speciality Coffee Association. 
-             Like most industies, the coffee industry is changing rapidly with the progression of technology. 
-             <br>
-            My hope is to develope my skills in coding and technology and combine my expertise in coffee to stay ahead of the curve. 
-        
-        </p>
-        </section>
-        <section>
-            <h3>Resume</h3>
-                <p><a href="resume.pdf">View my resume here.</a></p>
-                <i class="fas fa-file-pdf"></i>
-        </section>
-        <!--Links to work and socials-->
-        <section>
-            <h3>
-                Links
-            </h3>
+            </nav>
+        </header>
 
+    <!--Main Bio Section-->
+        <section class="infoclass">
+            <div>
+                <h2 class="headingclass">
+                Bio</h2>
+                <p class="biotext">
+                    Hi! 
+                    <br>I'm currently a student at Coder Academy, studying the CCC course - Coding, Cloud and Cybersecurity.
+                    My background is in hospitality in which I have worked for the last 10 years.
+                    I specialized specifically in the coffee and cafe side of the industry, having worked mostly as a speciality coffee barista. 
+                    I have spent the later years of my coffee career as a barista 
+                    trainer, which I am internationally recognized to teach courses developed by the Speciality Coffee Association. 
+                    Like most industies, the coffee industry is changing rapidly with the progression of technology. 
+                    My hope is to develope my skills in coding and technology and combine my expertise in coffee to stay ahead of the curve.
+                </p>
+            </div>
+         <!-- external links to CV + Git + linkedIn-->
+            <div>
+                <h3 class="headingclass">Resume</h3>
+                <span class="clickable" id="resume"><a href="resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Click here for my work history!</span></a>
+            </div>
+        </section>
+        <section id="exlinks">
+            <h3 class="headingclass"> Where to find me</h3>
             <ul style="list-style-type: none;">
-                <li><a href="https://www.linkedin.com/in/josh-bowen11">Linkedin</li><i class="fab fa-linkedin"></a></i>
-                <li><a href="https://github.com/jbreazy11/"> Github</li><i class="fab fa-github-square"></a></i>
-                <li><a href="https://www.sadcatsco.com">Side Project</li><i class="fas fa-cat"></i></a></i>
+                <li class="clickable"><a href="https://www.linkedin.com/in/josh-bowen11" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                <li class="clickable"><a href="https://github.com/jbreazy11/" target="_blank"><i class="fab fa-github-square"></i> Github</a></li>
+                <li class="clickable"><a href="https://www.sadcatsco.com" target="_blank"><i class="fas fa-cat"></i>Side Project</a></li>
             </ul>
         </section>
+
+        <!--Foooter-->
         <footer class="foot">
             <div id="footelements">
                 <div> Copyright 2021</div>
@@ -70,4 +69,4 @@
             </div>
         </footer>
     </body>
-</html>
+</html> 

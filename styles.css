@@ -1,50 +1,5 @@
-/*Basic universal design elements*/
-body {
-    background-color: rgba(149, 200, 202, 0.384);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-}
 
-/*Header design elements Photo by Fahmi Fakhrudin*/
-header {
-    background-color: white;
-    display: flex;
-    padding: 0px;
-    padding-left: 10%;
-    border-bottom: 2px solid gray;
-}
-#header-text {
-    position: relative;
-    flex-direction: column;
-    padding-top: 1%;
-}
-/*little round header image*/
-header img {
-    border-radius: 50%;
-    max-height: 150px;
-    margin: 10px;
-    padding: 0px 10px;
-}
-        /*Nav-bar position and styling*/
-/*styles navbar*/
-#header-navbar {
-    position: absolute;
-    right: 0px;
-    margin: 2% 2%;
-    color: black;
-}
-/*styles nav buttons*/
-nav span{
-    float: right;
-    display:inline-block;
-    border-right: 1px solid black;
-    padding: 6px;
-}
-/* removes border*/
-span:first-child{
-    border-right: 0;
-}
+/* Stylesheet for Home Page*/
 
         /* styling for below the header*/
 
@@ -52,6 +7,7 @@ span:first-child{
 .middle {
     display: flex;
     margin: auto;
+    border: solid 1px gray;
     margin-top: 10%;
     align-items: center;
     justify-content: center;
@@ -79,6 +35,8 @@ span:first-child{
     border-radius: 5%;
     font-size: 24px;
     width: 120px;
+    text-decoration: none;
+    cursor: pointer;
 }
 #buttonA:hover {
     background-color: black;
@@ -92,6 +50,8 @@ span:first-child{
     border-radius: 5%;
     font-size: 24px;
     width: 120px;
+    text-decoration: none;
+    cursor: pointer;
 }
 #buttonB:hover {
     background-color: black;
@@ -105,109 +65,11 @@ span:first-child{
     border-radius: 5%;
     font-size: 24px;
     width: 120px;
+    text-decoration: none;
+    cursor: pointer;
 }
 #buttonC:hover {
     background-color: black;
     color: white;
 }
 
-/*Footer stylings*/
-footer {
-    background-color: white;
-    border-top: 2px solid gray;
-    display: flex;
-    bottom: 0%;
-    height: 100px;
-    min-height: 30px;
-    margin-top: 10%;
-    justify-content: space-around;
-    align-items: center;
-}
-footer a {
-    padding: 20px;
-}
-
-#footelements {
-    display: flex;
-    padding: 0px;
-}
-
-#footicons {
-    font-size: 40px;
-
-}
-#catfriend {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-/*Media breakpoints*/
-@media only screen and (max-width: 1100px){
-    #header-navbar {
-        display: flex;
-        flex-direction: column-reverse;
-        position: relative;
-        float: right;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 60px;
-    }
-    nav span {
-        border-right: 0;
-        border-bottom: 1px black solid;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        margin: auto;
-        flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 15px;
-    }
- #header-navbar {
-        display: flex;
-        flex-direction: row-reverse;
-        position: relative;
-        margin: auto;
-    }
-    nav span {
-        border-right: 1px black solid;
-        border-bottom: 0;
-    }
-    header img { 
-        max-height: 150px;
-        max-width: 150px;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-
-    .button {
-        flex-direction: column;
-        position: relative;
-        top: 35px;
-    }
-    #buttonA {
-        margin-top: 20px;
-    }
-    #buttonB {
-        margin-top: 20px;
-    }
-    #buttonC {
-        margin-top: 20px;
-    }
-    div img {
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 375px) {
-    .button {
-        top: 10px;
-    }
-    p {
-        font-size: 18px;
-    } 
-}
