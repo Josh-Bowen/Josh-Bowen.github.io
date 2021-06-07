@@ -31,7 +31,7 @@
     bottom: 8px;
     left: 20px;
   }
-  .blog:nth-of-type(even) {
+.blog:nth-of-type(even) {
     background-color: gray;
 }
 .blog:nth-of-type(odd) {

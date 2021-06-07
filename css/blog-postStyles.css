@@ -1,0 +1,38 @@
+article {
+    display:fl
+
+}
+.blogheading{
+    background-image: url("/media/blogImages/alexandre-debieve.jpeg.jpg");
+    height: 1280px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-origin: inherit;
+    border: 1px red solid;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.blog-title {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.blogtext {
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid gray;
+    margin: auto;
+    min-width: 55%;
+    max-width: 75%;
+    padding: 40px 40px;
+}
+.backToTop {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
