@@ -1,13 +1,15 @@
 .header {
     margin: 0;
     padding: 0;
-    padding-left: 50px;
+    padding-left: 10%;
     max-height: 10%;
+    border: solid 1px red;
 }
+/*images for blog post header backgrounds*/
 .header-back-one {
     background-image: url("../media/blogImages/alexandre-debieve.jpeg.jpg");
     height: 250px;
-    width: 50%;
+    width: 600px;
     max-height: 15%;
     background-size: cover;
 }
@@ -43,10 +45,11 @@
     font-size: 40px;
     position: absolute;
     color: white;
-    padding: 20px 30px;
+    padding: 20px 20px;
     margin: auto;
     width: 50%;
 }
+/*stylings for blog text*/
 .blogtext {
     flex-direction: column;
     background-color: white;
@@ -62,4 +65,38 @@
     text-align: center;
     padding: 10px;
     margin-top: 30px;
+}
+
+/*Media breakpoints specifically for blog posts*/
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 0;
+        margin: 0;
+    }
+    #header-back-one {
+        max-width: 100px;
+    }
+    .blog-title {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 440px) {
+    #header-navbar span a {
+        border: 1px solid red;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;   
+    }
+    .blog-title {
+        margin: 0;
+        padding: 0;
+        border: 1px solid red;
+        font-size: 25px;
+    }
+    .blogtext p {
+        font-size: 15px;
+    }
 }
