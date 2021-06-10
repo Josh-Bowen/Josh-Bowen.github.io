@@ -73,10 +73,21 @@
         margin: 0;
         max-width: 100%;
     }
-    #header-back-one {
-        max-width: 100%;
+    .header-back-one {
+        width: 100%;
     }
-    
+    .header-back-two {
+        width: 100%;
+        }
+    .header-back-three {
+        width: 100%;
+    }
+    .header-back-four {
+        width: 100%;
+    }
+    .header-back-five {
+        width: 100%;
+    }
     .blog-title {
         font-size: 30px;
         padding: 0;
@@ -90,9 +101,7 @@
         padding: 0;
         margin: 0;   
     }
-    .header-back-one {
-        width: 100%;
-    }
+
     .blog-title {
         margin: 0;
         padding: 0;
