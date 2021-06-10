@@ -117,13 +117,11 @@ footer a {
 
 @media only screen and (max-width: 600px) {
     header {
-        margin: auto;
         flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
         margin-bottom: 15px;
-        max-width: 100%;
+        width: auto;
     }
+    
  #header-navbar {
         display: flex;
         flex-direction: row-reverse;
@@ -159,6 +157,7 @@ footer a {
         width: 50px;
     }
 }
+
 @media only screen and (max-width: 440px) {
     body {
         padding: 0;
