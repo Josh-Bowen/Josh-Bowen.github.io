@@ -3,7 +3,6 @@
     padding: 0;
     padding-left: 10%;
     max-height: 10%;
-    border: solid 1px red;
 }
 /*images for blog post header backgrounds*/
 .header-back-one {
@@ -72,10 +71,12 @@
     .header {
         padding: 0;
         margin: 0;
+        max-width: 100%;
     }
     #header-back-one {
-        max-width: 100px;
+        max-width: 100%;
     }
+    
     .blog-title {
         font-size: 30px;
         padding: 0;
@@ -85,15 +86,16 @@
 }
 @media only screen and (max-width: 440px) {
     #header-navbar span a {
-        border: 1px solid red;
         font-size: 20px;
         padding: 0;
         margin: 0;   
     }
+    .header-back-one {
+        width: 100%;
+    }
     .blog-title {
         margin: 0;
         padding: 0;
-        border: 1px solid red;
         font-size: 25px;
     }
     .blogtext p {

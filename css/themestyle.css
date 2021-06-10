@@ -91,7 +91,7 @@ footer a {
 /*CAUTION!!! MEDIA BREAKPOINTS BELOW - DO NOT CONFUSE WITH OTHER CODE*/
 
 /*Media breakpoints*/
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1400px){
     #header-navbar {
         display: flex;
         flex-direction: column-reverse;
@@ -119,6 +119,7 @@ footer a {
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 15px;
+        max-width: 100%;
     }
  #header-navbar {
         display: flex;
@@ -151,7 +152,8 @@ footer a {
         width: 100%;
     }
     #catfriend {
-        height: 40px;
+        height: 50px;
+        width: 50px;
     }
 }
 @media only screen and (max-width: 440px) {
@@ -174,5 +176,8 @@ footer a {
         font-size: 30px;
 
     }
-
+    #catfriend {
+        height: 40px;
+        width: 40px;
+    }
 }
