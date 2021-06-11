@@ -22,9 +22,12 @@ The webite consists a few HTML pages that have been styled with CSS and a small 
 The over-all design is intended to be simple, flexible and easy to navigate.
 
 ## Sitemap
-
+![sitemap](docs/sitemap.png "Sitemap") 
 
 ## Screenshots
+<img src="docs/homedeskss.png" alt="screenshot of home page."/>
+<img src="docs/homephss.png" alt="home page screenshot of pages middle." height="400px"/>
+<img src="docs/homephheadss.png" alt="screen shot of homepage header." height="400px"/>
 
 
 ## Target Audience 
